@@ -1,0 +1,180 @@
+html,
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+}
+
+///////////* Button mixin *///////
+
+@mixin greenButton {
+  background-color: #d1ea8e;
+  width: 200px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 45px;
+  font-size: 14px;
+  color: #2d2d2d;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  &:link {
+    text-decoration: none;
+  }
+}
+
+////////////// Main content ///////////////////
+
+.content {
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.shipping {
+  background-color: #d1ea8e;
+  height: 38px;
+  justify-content: center;
+  padding-top: 1px;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.main {
+  background-image: linear-gradient(to bottom, #8eb8eb, #abd2f3);
+  text-transform: uppercase;
+  .logo {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 140px;
+    border: transparent;
+  }
+  .offline {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 100%;
+    border: transparent;
+  }
+  button {
+    @include greenButton();
+    margin-bottom: 25px;
+  }
+  p {
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+  h1 {
+    font-size: 65px;
+    color: #edfac9;
+  }
+  .h2-1 {
+    color: #333333;
+    margin-top: -200px;
+    margin-left: -7px;
+  }
+  h2 {
+    letter-spacing: 3px;
+  }
+}
+
+img {
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.sign-up {
+  background-color: #edfac9;
+  justify-content: center;
+  padding: 60px;
+  margin: 0 auto;
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  color: #333333;
+  p {
+    padding: 30px;
+  }
+
+  button {
+    @include greenButton();
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+  }
+}
+
+/////////////////* Icons */////////////////////
+
+.icons {
+  margin-top: 20px;
+  display: flex;
+  font-size: 19px;
+  font-weight: 400;
+  flex-direction: row;
+  justify-content: center;
+  .icon-link {
+    flex: 1 0 auto;
+    padding: 10px;
+    justify-content: center;
+    img {
+      width: 50px;
+      height: 50px;
+      padding: 0px;
+    }
+  }
+}
+
+/////////////////////* Buttons group *///////////////////
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  button {
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    width: 280px;
+    height: 65px;
+    border-radius: 5px;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 19px;
+  }
+}
+
+/////////////////////* discount *////////////////////////
+
+.discount {
+  border: 1px solid;
+  border-top: none;
+  border-color: #cdcdcd;
+  padding: 15px;
+  p {
+    color: #686868;
+  }
+  small {
+    color: #686868;
+    font-size: 11px;
+  }
+}
+
+///////////////////////////* footer */////////////////////
+
+.footer {
+  color: #686868;
+  margin-top: 30px;
+  font-size: 13px;
+  margin-bottom: 50px;
+}
